@@ -5,39 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RuedaForte</title>
     <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
     <header class="header">
         <div class="head-superior">
-        <a href="#"><i class="fa-brands fa-whatsapp"></i>999000111</a>
-        <a href="#"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Dirección</a>
+            <div class="top-contact">
+                <a href="#"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>999 000 111</a>
+            </div>
+            <div class="top-location">
+                <a href="#"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Dirección</a>
+            </div>
         </div>
         <nav class="nav">
-        <img src="img/logo-ruedaforte-web.png" alt="logotipo ruedaforte">
-        <div class="nav-links">
-        <a href="#">Inicio</a>
-        <a href="#">Catalogo</a>
-        <a href="#">Comprar</a>
-        <a href="#">Nosotros</a>
-        <a href="#">Contacto</a>
-        </div>
-        <button class="boton-menu" type="button" aria-label="Abrir menú" ><i class="fa-solid fa-bars"></i></button>
+            <img src="img/logo-ruedaforte-web.png" alt="Logotipo de RuedaForte">
+            <div class="nav-links">
+                <a href="#">Inicio</a>
+                <a href="#">Destacados</a>
+                <a href="#">Llantas</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Contacto</a>
+                <a href="#">Mi pedido</a>
+            </div>
+            <a class="cart-link" href="#" aria-label="Ver carrito">
+                <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                <span class="cart-label">Mi pedido</span>
+                <span class="cart-count">0</span>
+            </a>
+            <button class="boton-menu" type="button" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
         </nav>
     </header>
     <main>
         <section class="hero">
             <img src="img/imagenhero.jpg" alt="Neumaticos apilados">
             <div class="frase-hero">
-            <h1>RUEDA CON CONFIANZA</h1>
-            <p>
-                Neumáticos importados de calidad para brindarte 
-                seguridad, confianza y rendimiento en la carretera.<em>¡Elige los tuyos!</em>
-            </p>
+                <h1>RUEDA CON CONFIANZA</h1>
+                <p>
+                    Neumáticos importados de calidad para brindarte
+                    seguridad, confianza y rendimiento en la carretera.<em>¡Elige los tuyos!</em>
+                </p>
             </div>
         </section>
+        <section class="catalogo">
+            <h2>Llantas destacadas</h2>
+            <p>Encuentra la medida ideal para tu vehículo</p>
 
+            <div class="productos">
+                <article class="producto-card">
+                <img src="img/llanta.jpg" alt="LLanta Rueda Forte medida">
+                <div class="producto-info">
+                <p class="producto-marca">Marca</p>
+                <h3>Modelo de la llanta</h3>
+                <p class="producto-medida">195/65 R15</p>
+                <p class="producto-stock">Disponible</p>
+                <a href="#" class="boton-consultar">Consultar por WhatsApp</a>
+                </div>
+                </article>
+
+                <article class="producto-card">
+                <img src="img/llanta.jpg" alt="LLanta Rueda Forte medida">
+                <div class="producto-info">
+                <p class="producto-marca">Marca</p>
+                <h3>Modelo de la llanta</h3>
+                <p class="producto-medida">195/65 R15</p>
+                <p class="producto-stock">Disponible</p>
+                <a href="#" class="boton-consultar">Consultar por WhatsApp</a>
+                </div>
+                </article>
+
+                <article class="producto-card">
+                <img src="img/llanta.jpg" alt="LLanta Rueda Forte medida">
+                <div class="producto-info">
+                <p class="producto-marca">Marca</p>
+                <h3>Modelo de la llanta</h3>
+                <p class="producto-medida">195/65 R15</p>
+                <p class="producto-stock">Disponible</p>
+                <a href="#" class="boton-consultar">Consultar por WhatsApp</a>
+                </div>
+                </article>
+            </div>
+        </section>
     </main>
+    <aside  class="social-links" aria-label="Redes sociales">
+       
+        <a href="#" aria-label="Escribir por Whatssapp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+         <a href="#" aria-label="Escribir por facebook">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+    </aside>
     <footer></footer>
     <script src="js/header.js"></script>
 </body>
